@@ -3,3 +3,44 @@
 [[package]]
 name = "ruspiro-allocator"
 version = "0.4.1"
+dependencies = [
+ "ruspiro-mmu",
+]
+
+[[package]]
+name = "ruspiro-console"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9b1209bb5e04314eb2e0e67e45259aa93b6856095c4713646f01a5a2dd77be43"
+dependencies = [
+ "ruspiro-singleton",
+]
+
+[[package]]
+name = "ruspiro-lock"
+version = "0.3.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "28a74399234c9f843b72a0a9e081d2723239c9b6b7cbd53a28a23feedaa875f8"
+
+[[package]]
+name = "ruspiro-mmu"
+version = "0.1.0"
+dependencies = [
+ "ruspiro-console",
+ "ruspiro-register",
+]
+
+[[package]]
+name = "ruspiro-register"
+version = "0.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "66e6c26a20382d716b701e95a2ea4684e54861f6140646f03f74df86b5f19ef1"
+
+[[package]]
+name = "ruspiro-singleton"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e7919b8dd53e14b4132567c623c439451d57252667fe98d2a436ca58b7794f97"
+dependencies = [
+ "ruspiro-lock",
+]

@@ -21,6 +21,7 @@ maintenance = { status = "actively-developed" }
 [lib]
 
 [dependencies]
+ruspiro-mmu = { path = "../mmu" }
 
 [features]
 
